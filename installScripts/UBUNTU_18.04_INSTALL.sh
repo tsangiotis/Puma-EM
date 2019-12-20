@@ -1,6 +1,6 @@
 #!/bin/bash
 ###############################################################
-# script for Ubuntu 14.04 to compile puma-em MoM simulator.   #
+# script for Ubuntu 18.04 to compile puma-em MoM simulator.   #
 ###############################################################
 
 echo " "
@@ -15,7 +15,7 @@ echo " You will be asked for your root password so that the machine can install 
 # installing the main dependencies...
 echo " sudo password for installing main dependencies... "
 sudo apt-get update
-sudo apt-get install g++ gfortran gmsh autoconf libtool python-dev python-scipy python-matplotlib python-mpi4py python-tk openmpi-bin libopenmpi-dev dvipng cvs automake
+sudo apt-get install g++ gfortran gmsh autoconf libtool python-dev python-scipy python-matplotlib python-mpi4py python-tk python3-dev python3-scipy python3-matplotlib python3-mpi4py python3-tk openmpi-bin libopenmpi-dev dvipng cvs automake make 
 # create makefile.inc
 cd ..
 PUMA_EM_DIR=$PWD
